@@ -11,11 +11,13 @@ public class Person {
 
     private String prename;
     
+    private String phone1;
+    
     /**
      * Liefert ein mit Leerstrings initialisiertes Person-Exemplar
      */
     public Person() {
-    	this("", "");
+    	this("", "", "");
     }
 
     /**
@@ -29,6 +31,22 @@ public class Person {
     public Person(String prename, String name) {
         this.prename = prename;
         this.name = name;
+    }
+    
+    /**
+     * Liefert ein neues Exemplar dieser Klasse mit dem gegebenen Vor- und Nachnamen, sowie Telefonnummer
+     * 
+     * @param prename
+     *            der Vorname
+     * @param name
+     *            der Nachname
+     * @param phone1
+     * 			  Telefonnummer
+     */
+    public Person(String prename, String name, String phone1) {
+        this.prename = prename;
+        this.name = name;
+        this.phone1 = phone1;
     }
 
     /**
@@ -67,6 +85,25 @@ public class Person {
      */
     public void setPrename(String prename) {
     	this.prename = prename;
+    }
+    
+    /**
+     * Liefert die Telefonnummer dieser Person.
+     * 
+     * @return der Vorname
+     */
+    public String getPhone1() {
+        return phone1;
+    }
+    
+    /**
+     * Ändert Telefonnummer dieser Person.
+     * 
+     * @param prename 
+     * 			     der neue Vorname
+     */
+    public void setPhone1(String phone1) {
+    	this.phone1 = phone1;
     }
 
     /*

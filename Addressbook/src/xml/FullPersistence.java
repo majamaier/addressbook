@@ -21,6 +21,7 @@ public interface FullPersistence {
      *            der Name, unter dem das Adressbuch gespeichert werden soll
      * @throws AddressBookException
      *             wenn das Speichern des Adressbuchs fehlschlaegt
+     * @throws AddressBookException 
      */
     void storeBook(AddressBookDataStore book, String name) throws AddressBookException;
 }

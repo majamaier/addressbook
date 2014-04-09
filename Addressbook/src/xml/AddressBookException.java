@@ -18,7 +18,7 @@ public class AddressBookException extends Exception {
      * @param message
      *            die Fehlernachricht
      */
-    AddressBookException(String message) {
+	AddressBookException(String message) {
         super(message);
     }
 }
